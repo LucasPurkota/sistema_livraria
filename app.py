@@ -227,8 +227,7 @@ class GerenciadorLivraria:
     
     def importar_csv(self):
         try:
-            arquivo_csv = input("Digite o caminho do arquivo CSV para importar: ")
-            caminho_csv = os.path.join(self.diretorio_exports, arquivo_csv)
+            caminho_csv = input("Digite o caminho do arquivo CSV para importar: ")
             
             if not os.path.exists(caminho_csv):
                 print("Arquivo CSV não encontrado!")

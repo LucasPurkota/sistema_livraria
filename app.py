@@ -191,13 +191,12 @@ class GerenciadorLivraria:
                 return
             
             print(f"\n--- LIVROS DO AUTOR: {autor.upper()} ---")
+            print("ID | Título | Autor | Ano | Preço")
+            print("-" * 60)
             for livro in livros:
-                print(f"ID: {livro[0]}")
-                print(f"Título: {livro[1]}")
-                print(f"Autor: {livro[2]}")
-                print(f"Ano: {livro[3]}")
-                print(f"Preço: R$ {livro[4]:.2f}")
-                print("-" * 30)
+                print(f"{livro[0]} | {livro[1]} | {livro[2]} | {livro[3]} | R$ {livro[4]:.2f}")
+            
+            print("-" * 60)
                 
         except Exception as e:
             print(f"Erro ao buscar por autor: {e}")
